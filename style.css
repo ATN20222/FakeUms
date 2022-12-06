@@ -1,0 +1,419 @@
+body{
+    height:900vh ;
+}
+/* 
+html{
+    scroll-behavior: smooth;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+
+
+nav{
+    background-color: #1c335f;
+    color: white;
+}
+
+svg{
+    color: white;
+
+}
+svg:hover{
+    color: #5e5d76;
+    text-decoration: none;
+    transition: all .2s;
+
+}
+
+
+.Link_1,
+.Link_2,
+.Link_3,
+.Link_4{
+    color: #5e5d76;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .5s;
+    color: #c3c1da;
+}
+
+.info1 ul li::before{
+    
+    content: "";
+    margin: 2px;
+    width: 1px;
+    height: 10px;
+    top: 1px;
+    background: #5e5d76;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.UmsDescripe{
+    color: #677294;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.container1 {
+    position: relative;
+    transition: ease 1s;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.slider{
+    z-index: 10;
+    transition: ease 1s;
+    width: 300%;
+    position: relative;
+
+
+}
+
+
+.slider img{
+    height: 650px;
+
+
+}
+
+
+
+.ArrowLeft{
+    z-index: 11;
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+}
+
+.ArrowRight{
+    z-index: 11;
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+}
+
+.CheckContainer{
+    position: absolute;
+    left: 44%;
+    bottom: 10px;
+}
+
+
+
+
+.Check1,
+.Check2,
+.Check3{
+    z-index: 12;
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.516);
+    bottom: 10%;
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.Check2{
+    left: 50px;
+}
+
+.Check3{
+left: 100px;
+}
+.span1{
+    transition: ease-in-out 1.5s;
+    font-size: 30px;
+    color: #1c335f;
+    font-weight: 700;
+    position: absolute;
+    z-index: 13;
+    top: 244px;
+    left: 0px;
+    opacity: 0% ;
+}
+.descripe1{
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Caption1{
+    top: 30%;
+    left: 10%;
+    color: #1c335f;
+}
+
+
+
+
+
+
+
+
+
+
+.CardsContainer{
+    background-image: url(CardsBackground.jpg);
+    background-size: cover;
+    position: relative;
+    transition: all 2s;
+    right: 100%;
+    opacity:0%;
+}
+
+
+.Card1{
+    transition: ease-in-out .2s;
+    bottom: 0px;
+}
+
+.Card1:hover{
+    /* transition: all .7s; */
+    bottom: 15px;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.Login:after,
+.Login:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.MainDownNav{
+    margin-bottom: 100px;
+    display: block;
+    height: 80px ;
+    background-color: #f7f7f7;
+    margin: 10px;
+
+}
+.Ungraduated{
+    margin-top: 70px;
+    width: 100%;
+    background-color: #f7f7f7;
+
+}
+
+
+
+.DownNavBar{
+    direction: rtl;
+}
+
+
+.NavBtn{
+    transition: ease-in-out .3s;
+    outline: none;
+    border: none;
+    color: #677294;
+
+}
+.NavBtn svg{
+    background-color: orange;
+    border-radius: 50%;
+}
+
+
+
+.active{
+    display: block;
+}
+
+.NotActive{
+    display: none;
+}
+
+
+
+.ServiceList li a{
+    transition: all 1s;
+    text-decoration: none;
+    color: #677294;
+    font-size: 20px;
+}
+
+.ServiceList li a:hover {
+    text-decoration:underline;
+
+}
+
+.ServicesContainer{
+    position: relative;
+    left: 100%;
+    transition: ease-in-out 2s;
+    opacity: 0% ;
+}
+
+
+
+.stat{
+    height: 500px;
+    background-color: #1c335f;
+}
+
+
+
+
+
+/*circles*/
+
+.progress {
+    width: 150px;
+    height: 150px ;
+    float: left; 
+    line-height: 150px;
+    background: none;
+    margin: 20px;
+    box-shadow: none;
+    position: relative;
+  }
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .ProgressLeft {
+    left: 0;
+}
+
+.progress .ProgressBar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+
+.progress .ProgressLeft .ProgressBar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+}
+.progress .ProgressRight {
+    right: 0;
+}
+
+.progress .ProgressRight .ProgressBar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right;
+    animation: Loading1 1.8s linear forwards;
+}
+
+.progress .ProgressValue {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+
+
+
+.progress.blue .ProgressBar {
+    border-color: #049dff;
+}
+
+
+
+
+
+.progress.blue .ProgressLeft .ProgressBar {
+    animation: Loading2 1.5s linear forwards 1.8s;
+}
+
+
+
+
+
+
+@keyframes Loading1 {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(180deg);
+    }
+}
+
+
+@keyframes Loading2 {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(144deg);
+    }
+}
+
