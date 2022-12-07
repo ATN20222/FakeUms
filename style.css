@@ -1,6 +1,6 @@
-body{
+/* body{
     height:900vh ;
-}
+} */
 /* 
 html{
     scroll-behavior: smooth;
@@ -168,19 +168,6 @@ left: 100px;
 
 
 
-.Caption1{
-    top: 30%;
-    left: 10%;
-    color: #1c335f;
-}
-
-
-
-
-
-
-
-
 
 
 .CardsContainer{
@@ -269,7 +256,7 @@ background: #eee;
 
 
 .ServiceList li a{
-    transition: all 1s;
+    transition: all .5s;
     text-decoration: none;
     color: #677294;
     font-size: 20px;
@@ -277,10 +264,12 @@ background: #eee;
 
 .ServiceList li a:hover {
     text-decoration:underline;
+    color: #049dff;
 
 }
 
-.ServicesContainer{
+.ServicesContainer,
+.LoginContainer{
     position: relative;
     left: 100%;
     transition: ease-in-out 2s;
@@ -290,7 +279,6 @@ background: #eee;
 
 
 .stat{
-    height: 500px;
     background-color: #1c335f;
 }
 
@@ -298,122 +286,94 @@ background: #eee;
 
 
 
-/*circles*/
+.FooterLinks li a{
+    text-decoration: none;
+    color: #5e5d76;
 
-.progress {
-    width: 150px;
-    height: 150px ;
-    float: left; 
-    line-height: 150px;
-    background: none;
-    margin: 20px;
-    box-shadow: none;
-    position: relative;
-  }
+}
 
-.progress:after {
+.FIcon{
+    color: rgb(48, 48, 193);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.YIcon{
+    color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.LIcon{
+    color: rgb(3, 34, 173);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.GIcon{
+    color: rgb(211, 241, 127);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.FooterLinks li a:hover{
+    transition: all .5s;
+    text-decoration: underline;
+    color:#049dff ;
+}
+
+
+
+
+
+
+.FooterFinish li a{
+    text-decoration: none;
+    color: #5e5d76;
+}
+
+.FooterFinish li::before{
+    
     content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 10px solid #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin: 4px;
+    width: 1px;
+    height: 10px;
+    top: 1px;
+    background: #5e5d76;
+    display: inline-block;
+    position: relative;
+
 }
-.progress span {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-.progress .ProgressLeft {
-    left: 0;
+.FooterFinish li a:hover{
+    transition: ease .5s;
+    text-decoration: underline;
+    color: #049dff;
 }
 
-.progress .ProgressBar {
-    width: 100%;
-    height: 100%;
-    background: none;
-    border-width: 10px;
-    border-style: solid;
-    position: absolute;
-    top: 0;
+footer .container .row1{
+    position: relative;
+    transition: all 3s;
+    right: 100%;
+    opacity: 0%;
+
 }
 
 
-.progress .ProgressLeft .ProgressBar {
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    transform-origin: center left;
-}
-.progress .ProgressRight {
-    right: 0;
+
+.Caption1{
+    top: 30%;
+    left: 25%;
+    color: #1c335f;
 }
 
-.progress .ProgressRight .ProgressBar {
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    transform-origin: center right;
-    animation: Loading1 1.8s linear forwards;
-}
-
-.progress .ProgressValue {
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    background: transparent;
-    font-size: 24px;
-    color: #fff;
-    line-height: 135px;
-    text-align: center;
-    position: absolute;
-    top: 5%;
-    left: 5%;
+.Caption2,
+.Caption3{
+    top: 25%;
+    left: 10%;
 }
 
 
 
 
-.progress.blue .ProgressBar {
-    border-color: #049dff;
-}
-
-
-
-
-
-.progress.blue .ProgressLeft .ProgressBar {
-    animation: Loading2 1.5s linear forwards 1.8s;
-}
-
-
-
-
-
-
-@keyframes Loading1 {
-    0% {
-    transform: rotate(0deg);
-    }
-    100% {
-    transform: rotate(180deg);
-    }
-}
-
-
-@keyframes Loading2 {
-    0% {
-    transform: rotate(0deg);
-    }
-    100% {
-    transform: rotate(144deg);
-    }
-}
 

